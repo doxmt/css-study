@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #a{
+      width: 100px; height: 50px;
+      background-color: orange;
+      float: right;
+    }
+    #b{
+      width: 100px; height: 100px;
+      background-color: royalblue;
+      float: left ;
+    }
+    /*
+    float
+    -none : 기본값, 원래 상태
+    -left : 자신을 포함하고 있는 박스의 왼편에 떠 있어야 함
+    -right : 자신을 포함하고 있는 박스의 오른편에 떠 있어야 함 
+    */
+    p{
+      clear: right;
+    }
+    /* 
+    claer
+    - none : 기본값, 아래로 이동되지 않음 
+    - left : float이 left인 요소의 아래로 내려가겠다
+    - right : float이 right인 요소의 아래로 내려가겠다
+    - both : float이 left 및 right인 요소의 아래로 내려가겠다 
+    */
+
+  </style>
+</head>
+<body>
+  <div id="a"></div>
+  <div id="b"></div>
+  <p>저는 세번째 태그입니다.</p>
+  <p>저는 세번째 태그입니다.</p>
+  <p>저는 세번째 태그입니다.</p>
+  <p>저는 세번째 태그입니다.</p>
+  <p>저는 세번째 태그입니다.</p>
+  <p>저는 세번째 태그입니다.</p>
+  <p>저는 세번째 태그입니다.</p>
+</body>
+</html>
