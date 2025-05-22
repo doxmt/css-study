@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item1{
+      width: 50px; height: 50px;
+      background-color: orange;
+    }
+    .container1{
+      display: colum;
+      flex-direction: row;
+    }
+    /* 
+    flex-direction 속성은 flexbox 내 요소를 배치할 때 사용할 주축 및 방향을 지정한다.
+    - row : 기본값. 주축은 행이고, 방향은 콘텐츠의 방향과 동일
+    - row-reverse : 주축은 행이고, 방향은 콘텐츠의 방향과 반대
+    - colum : 주축은 열이고, 방향은 콘텐츠의 방향과 동일
+    - colum-reverse : 주축은 열이고, 방향은 콘텐츠의 방향과 반대 
+    */
+
+    .container2{
+      display: flex;
+      width: 300px; height: 300px;
+      border: 2px solid black;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .item2{
+      width: 60px; height: 60px;
+      background-color: teal;
+    }
+    .self{
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <div class="item1">1</div>
+    <div class="item1">2</div>
+    <div class="item1">3</div>
+    
+    <br><br><br><br>
+
+    <div class="container2">
+      <div class="item2">1</div>
+      <div class="item2 self">2</div>
+      <div class="item2">3</div>
+    </div>
+
+
+  </div>
+</body>
+</html>
