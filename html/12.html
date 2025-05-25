@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p::first-line{
+      color: red;
+    }
+    p::first-letter{
+      color: yellow;
+    }
+    li::marker{
+      color: blue;
+      font-size: 60px;
+    }
+    input::placeholder{
+      font-weight: bold;
+      color: black;
+    }
+   
+    .text::before{
+      content: "앞에 추가한 내용";
+      color: red; font-weight: 900;
+    }
+    .text::after{
+      content: "뒤에 추가한 내용";
+      color: blue; font-weight: 100;
+    }
+
+  </style>
+</head>
+<body>
+  <p>
+    퍼스트 라인 그리고 퍼스트 레터 <br>
+    퍼스트 라인 그리고 퍼스트 레터 <br>
+    퍼스트 라인 그리고 퍼스트 레터 <br>
+    퍼스트 라인 그리고 퍼스트 레터 <br>
+  </p>
+  <br>
+  <ul>
+    <li>강아지</li>
+    <li>고양이</li>
+    <li>다람쥐</li>
+    <li>햄스터</li>
+  </ul>
+  <br>
+  <input type="text" placeholder="글자를 입력하세요.">
+  <br>
+  <p class="text">원래 쓰여 있던 내용</p>
+</body>
+</html>
