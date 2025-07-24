@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+ul{
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  height: 200px;
+  border: 5px solid black;
+  
+}
+
+li{
+  background-color: beige;
+}
+
+li:nth-child(2){
+  background-color: coral;
+  flex-basis: 100px;
+  flex-shrink: 2;
+}
+
+li:nth-child(3){
+  flex-basis: 200px;
+  flex-shrink: 3;
+}
+
+li:nth-child(4){
+  background-color: coral;
+  flex: 0 1 200px;
+}
+
+li:nth-child(1){order: -4;}
+li:nth-child(2){order: 4;}
+li:nth-child(3){order: -2;}
+li:nth-child(4){order: 1;}
+li:nth-child(5){order: 2;}
+
+
+
+/* # justify-content
+
+주축위에서의 아이템 정렬
+
+- flex-start : (기본값) 아이템들을 시작점으로 정렬한다.
+- flex-end : 아이템들을 끝점으로 정렬한다.
+- center : 아이템들을 가운데로 정렬한다.
+- space-between : 아이템들의 "사이(between)"에 균일한 간격을 만들어준다.
+- space-around : 아이템들의 "둘레(around)"에 균일한 간격을 만들어준다.
+- space-evenly : 아이템들의 사이와 양 끝에 일정한 간격을 만들어준다.
+
+# **align-items**
+
+플렉스 컨테이너 교차축 위에서의 아이템 정렬
+
+- stretch
+- flex-start
+- flex-end
+- baseline
+- initial
+- ingerit
+
+# **align-self**
+
+각각의 아이템들이 교축에서의 정렬
+
+- auto
+- center
+- flex-start
+- flex-end
+- baseline
+- initial
+- ingerit
+
+# **flex-wrap**
+
+- nowrap
+- wrap
+- wrap-reverse
+
+# **flex-grow**
+
+플렉스 아이템이 기본 크기보다 더 커질 수 있는지 결정,
+
+컨테이너 내부에서 할당받을 수 있는 공간을 상대적으로 정의
+
+# **flex-shrink**
+
+# **flex**
+
+flex-grow, flex-shrink, flex-basis
+
+를 정의할 수 있는 단축 속성
+
+# **order**
+
+플렉스 아이템의 배치 순서 설정
+
+지정한 숫자에 맞춰 오름차순 정렬
+
+플렉스 아이템이 기본 크기보다 더 작아질 수 있는지 결정,
+ */
